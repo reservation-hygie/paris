@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réservation des Salles</title>
+  <style>
+    /* Style général */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: linear-gradient(135deg, #f7f7f7, #e8e8e8);
+      color: #333;
+      min-height: 100vh;
+    }
+
+    /* Conteneur principal */
+    .container {
+      text-align: center;
+      padding: 40px 20px;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    /* Titre */
+    h1 {
+      margin: 0 0 20px;
+      font-size: 3em;
+      font-weight: bold;
+      color: #2a2a2a;
+    }
+
+    /* Description */
+    .description {
+      font-size: 1.2em;
+      margin-bottom: 60px; /* Espace augmenté ici */
+      color: #555;
+      max-width: 800px;
+      margin: 0 auto 60px;
+    }
+
+    /* Conteneur des boutons */
+    .salles-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    /* Boutons des salles */
+    .salle-button {
+      background: white;
+      color: #2a2a2a;
+      padding: 25px 50px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      width: 280px;
+      border: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Effet au survol */
+    .salle-button:hover {
+      background: #f0f0f0;
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Icônes */
+    .salle-button i {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Titre -->
+    <h1>Réservez Votre Salle</h1>
+    
+    <!-- Description -->
+    <p class="description">
+      Choisissez parmi nos 5 salles modulables pour vos réunions, formations ou événements. Cliquez sur une salle pour vérifier les disponibilités et réserver.
+    </p>
+    
+    <!-- Boutons des salles -->
+    <div class="salles-container">
+      <a href="https://outlook.office365.com/book/Olympie@lafsante.com/" class="salle-button" target="_blank" rel="noopener noreferrer">
+        🏟️ Olympie (14 places)
+      </a>
+      <a href="https://outlook.office365.com/book/Sprint@lafsante.com/" class="salle-button" target="_blank" rel="noopener noreferrer">
+        🚀 Sprint (5 places)
+      </a>
+      <a href="https://outlook.office365.com/book/Brennus1@lafsante.com/" class="salle-button" target="_blank" rel="noopener noreferrer">
+        🛋️ Brennus1 (5 places)
+      </a>
+      <a href="https://outlook.office365.com/book/Auriane1@lafsante.com/" class="salle-button" target="_blank" rel="noopener noreferrer">
+        🪑 Auriane1 (2 places)
+      </a>
+      <a href="https://outlook.office365.com/book/Podium@lafsante.com/" class="salle-button" target="_blank" rel="noopener noreferrer">
+        🏆 Podium (1 place)
+      </a>
+    </div>
+  </div>
+</body>
+</html>
